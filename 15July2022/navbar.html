@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation bar</title>
+    <style>
+        div {
+            background-color: peru;
+            height: 15px;
+            padding: 20px;
+        }
+        
+        nav a {
+            /* padding:10px;*/
+            margin: 10px;
+            text-decoration: none;
+            font-size: 20px;
+            border: 3px solid black;
+            background-color: white;
+            border-radius: 30px;
+            padding: 0px;
+            font-style: italic;
+            font-size: bold;
+            color: red;
+            background-image: url(/cover1.jpg);
+        }
+    </style>
+</head>
+
+<body style="background-color:antiquewhite ;opacity: 1; ">
+    <div>
+        <nav>
+            <a href="/cover1.jpg">Cover Page</a>
+            <a href="/commands.txt">Commands</a>
+            <a href="/14July2022/1file.txt">Folder/File</a>
+        </nav>
+    </div>
+    <label for="file">downloading Progress </label>
+    <progress id="file" value="32" max="100">32%</progress>
+    <br>
+    <label for="progress">Name</label>
+    <input type="text" value="abc" name="name/" id="progress">
+    <form action="Welcome.html" method="get">
+        <fieldset>
+            <legend style="text-align:center ;">
+                Form
+            </legend>
+            <label for="name1">Name</label>
+            <input type="text" id="name1" name="name" />
+            <br>
+            <br>
+            <label for="email">EmailId</label>
+            <input type="email" id="email" name="name" placeholder="abc@gmail.com" />
+            <br>
+            <br>
+            <p>Select Gender:</p>
+            <input type="radio" name="gender" value="Male" />
+            <label for="male">Male</label>
+            <br>
+            <input type="radio" name="gender" value="Female" />
+            <label for="female">Female</label>
+
+            <br>
+            <br>
+            <p>Select Your Subjects:</p>
+            <label for="cours">1.Front End</label>
+            <input type="checkbox" name="course" id="cours">
+            <label for="cours1">2.PA</label>
+            <input type="checkbox" name="course" id="cours1">
+
+
+            <label for="cours2">3.Back End</label>
+            <input type="checkbox" name="course" id="cours2">
+            <br>
+            <br>
+            <input type="Submit" value="Submit">
+
+        </fieldset>
+    </form>
+    <p></p>
+</body>
+
+</html>
