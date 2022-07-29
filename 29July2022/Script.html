@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Data should be animate ,delayed or user interaction or more things that is runable . to make html dynamic it is javaScript.</p>
+    <p>We can change css property through javaScript</p>
+    <p>We can hide data with javaScript</p>
+    <p>TYpe Script is a highest library of javaScript.</p>
+
+    <h3>Keywords</h3>
+    <p>let , var ,const</p>
+    <h4>var</h4>
+    <p>var local will count if the variable names are same at locan and global</p>
+    <h4>let</h4>
+    <p>let can change at global and local with same name.</p>
+    <h4>const</h4>
+    <p>const will be constant and initialize or declare at a same time.</p>
+    <p>Console is used for log files and you can use it for print any value .</p>
+    <p>with loging system we can communicate system to system and server to server</p>
+    <p></p>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"> </p>
+    <script>
+        var price1 = 6;
+        var price2 = 5;
+        var totalprice = price1 + price2;
+        console.log(totalprice);
+        document.getElementById("demo").innerHTML = "Total Price is " + totalprice;
+
+        var fullname = "john" + "Doe";
+        document.getElementById("demo1").innerHTML = "Full Name " + fullname;
+        var n = "5" + "5"; //55
+        var n1 = "5" + 5; //55
+        var n3 = 5 + 5;
+        document.getElementById("demo2").innerHTML = n3;
+    </script>
+    <!--  <p id="demo"></p>  if you write this here then dom will not access this id and will not give any output at page-->
+</body>
+
+</html>
