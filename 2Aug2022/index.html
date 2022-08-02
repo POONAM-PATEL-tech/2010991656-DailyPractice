@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function funclick() {
+
+            alert("Hi,How are you?");
+        }
+
+        function fun() {
+            document.getElementById("p1").innerHTML = "hello";
+        }
+
+        function checknum() {
+            var n1 = "A";
+            var n2 = "6";
+            n1 = Number(n1);
+            n2 = Number(n2);
+            document.getElementById("p2").innerHTML = n1 + n2;
+        }
+
+        function checknum1() {
+            var n1 = document.getElementById("n1").value;
+            var n2 = document.getElementById("n2").value;
+
+            if (!isNaN(n1) && !isNaN(n2)) {
+                n1 = Number(n1);
+                n2 = Number(n2);
+                document.getElementById("p3").innerHTML = n1 + n2;
+
+            } else {
+                document.getElementById("p3").innerHTML = "<span style='color:red'> Please enter numeric value.</span>";
+            }
+
+        }
+
+        function checkalert() {
+            var n3 = document.getElementById("n3").value;
+            var n4 = document.getElementById("n4").value;
+            n3 = Number(n3);
+            n4 = Number(n4);
+            alert(!isNaN(n3));
+            document.getElementById("p4").innerHTML = n3 + n4;
+
+        }
+    </script>
+</head>
+
+<body>
+    <p>function will create a module and when we need it will call.</p>
+    <p>funclick is a userdefind function name and function is a keyword which is javascript own keyword.</p>
+    <button onclick="funclick()">Click</button>
+    <button onclick="fun()">CLick!!</button>
+    <!--here the id is below the buuton but even we can call it because it is an event function.-->
+    <p id="p1"></p>
+    <button onclick="checknum()">CLick2</button>
+    <p id="p2"></p>
+
+    <button onclick="checknum1()">Click3</button> N1
+    <input type="text" name="n1" id="n1" /> <br/> N2
+    <input type="text" name="n2" id="n2" /> <br/>
+    <p id="p3"></p>
+
+
+    <button onclick="checkalert()">Checkalert</button> N1
+    <input type="text" name="n3" id="n3" /> <br/> N2
+    <input type="text" name="n4" id="n4" /> <br/>
+    <p id="p4"></p>
+
+
+
+</body>
+
+</html>

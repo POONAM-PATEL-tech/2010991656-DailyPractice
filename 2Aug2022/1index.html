@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fnClick() {
+            document.getElementById("p1").innerHTML = Boolean(10 > 9);
+        }
+
+        function funClick() {
+            let n1 = document.getElementById("n1").value;
+            if (n1 % 2 == 0) {
+                document.getElementById("p2").innerHTML = "Even Number";
+            } else {
+
+
+                document.getElementById("p2").innerHTML = "Odd Number";
+            }
+        }
+
+        function checkPrime() {
+            let n1 = document.getElementById("n2").value;
+            for (var i = 2; i <= n1 / 2; i++)
+
+            {
+                if (n1 % i == 0) {
+                    document.getElementById("p3").innerHTML = " Not Prime Number";
+                    break;
+                }
+            }
+            document.getElementById("p3").innerHTML = "Prime Number";
+        }
+    </script>
+</head>
+
+<body>
+    <p>As for boolean at javascript it will show true for condition is right and false for condition is wrong.</p>
+    <button onclick="fnClick()">Click</button>
+    <p id="p1"></p>
+
+
+    N1 <input type="text" name="n1" id="n1"><br/>
+    <button onclick="funClick()">Click</button>
+    <p id="p2"></p>
+
+    N2 <input type="text" name="n2" id="n2"><br/>
+    <button onclick="checkPrime()">Click</button>
+    <p id="p3"></p>
+</body>
+
+</html>
