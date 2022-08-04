@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <h2>Change Border Radius of Div in JavaScript</h2>
+    <div id="myDiv" style="border:2px solid green ;height:100px; width:100px;">
+
+    </div>
+    <br>
+    <button type="button" onclick="changeStyle()">Click Me</button>
+    <script>
+        function changeStyle() {
+            var element = document.getElementById("myDiv");
+            element.style.borderRadius = "100%";
+            element.style.transitionDuration = "2s";
+        }
+    </script>
+</body>
+
+</html>

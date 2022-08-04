@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun() {
+            var n1 = document.getElementById("n1").value;
+
+            let evennums = 0;
+
+
+            for (var i = 2; i <= n1; i++) {
+
+                if (i % 2 == 0) {
+
+                    evennums += i;
+
+
+                }
+            }
+            document.getElementById("p1").innerHTML = evennums;
+
+
+        }
+    </script>
+</head>
+
+<body>
+    Number<input type="number" id="n1" name="n1"><br/>
+    <button onclick="fun()">Click</button>
+    <p id="p2"></p>
+    <p id="p1"></p>
+</body>
+
+</html>

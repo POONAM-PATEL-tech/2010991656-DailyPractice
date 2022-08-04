@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function func() {
+            var first = document.getElementById("in").value;
+            var last = document.getElementById("last").value;
+            var divisor = document.getElementById("div").value;
+            if (last > first) {
+                let count = 0;
+                for (let i = first; i <= last; i++) {
+                    if (i % divisor) {
+                        count++;
+                    }
+                }
+                document.getElementById("p").innerHTML = count;
+            } else {
+                document.getElementById("p").innerHTML = "error";
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+    Initial<input type="text" id="in" name="in"><br/> last <input type="text" id="last" name="last"><br/> divisor
+    <input type="text" id="div" name="div"><br/>
+    <button onclick="func()">Click</button>
+    <p id="p"></p>
+</body>
+
+</html>
