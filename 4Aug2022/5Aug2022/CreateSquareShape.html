@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+    <script>
+        function func() {
+            var n = document.getElementById("n1").value;
+            var element = document.getElementById("mydiv");
+            n = Number(n);
+            if (isNaN(n)) {
+                document.getElementById("mydiv").innerHTML = "error";
+            } else {
+                var sum = 0;
+                var count = 0;
+                while (n > 0) {
+
+                    var rem = n % 10;
+                    sum += rem;
+                    n = Math.floor(n / 10);
+                    count++;
+                }
+                if (count > 5 || count < 5) {
+                    alert("error");
+                } else {
+                    var BorRadius = Math.floor(sum / 5);
+                    element.style.borderRadius = BorRadius + "px";
+                    element.style.height = sum + "px";
+                    element.style.width = sum + "px";
+                    element.style.backgroundColor = "red";
+                    element.style.transition = "2s";
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1 style="text-align:center">Enter a number to create a Square Shape</h1>
+    n<input type="text" id="n1" name="n1">
+    <button onclick="func()">Click</button>
+    <div id="mydiv"></div>
+</body>
+
+</html>

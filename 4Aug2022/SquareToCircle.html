@@ -3,21 +3,28 @@
 
 <head>
     <meta charset="utf-8">
+    <script>
+        function changeStyle() {
+            var n = document.getElementById("n").value;
+
+
+
+            var element = document.getElementById("myDiv");
+            element.style.borderRadius = "100%";
+            element.style.transitionDuration = "2s";
+        }
+    </script>
 </head>
 
 <body>
     <h2>Change Border Radius of Div in JavaScript</h2>
+    n<input type="text" id="n" name="n">
     <div id="myDiv" style="border:2px solid green ;height:100px; width:100px;">
 
     </div>
     <br>
     <button type="button" onclick="changeStyle()">Click Me</button>
-    <script>
-        function changeStyle() {
-            var element = document.getElementById("myDiv");
-            element.style.borderRadius = "100%";
-            element.style.transitionDuration = "2s";
-        }
+
     </script>
 </body>
 
