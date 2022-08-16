@@ -45,7 +45,7 @@
             var element = document.getElementById("mydiv");
             n = Number(n);
             if (isNaN(n)) {
-                document.getElementById("mydiv").innerHTML = "error";
+                alert("error");
             } else {
                 var sum = 0;
                 var count = 0;
@@ -54,6 +54,7 @@
                     var rem = n % 10;
                     sum += rem;
                     n = Math.floor(n / 10);
+
                     count++;
                 }
                 if (count > 5 || count < 5) {
@@ -65,6 +66,9 @@
                     element.style.width = sum + "px";
                     element.style.backgroundColor = "black";
                     element.style.transition = "2s";
+                    element.style.transitionDelay = "1s";
+
+
 
                 }
             }
@@ -79,6 +83,7 @@
         <input type="text" id="n1" name="n1" placeholder="Enter a number"><br/>
         <button onclick="func()"><b>Create Square Shape</b></button><br/>
         <div id="mydiv"></div>
+
     </div>
 </body>
 

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function passvalue() {
+            var firstname = document.getElementById("text").value;
+            localStorage.setItem("textvalue", firstname);
+            var email = document.getElementById("mail").value;
+            localStorage.setItem("emailId", email);
+
+            var password = document.getElementById("password").value;
+            localStorage.setItem("passw", password);
+
+            var mobile = document.getElementById("num").value;
+            localStorage.setItem("mobileNum", mobile);
+
+            return false;
+
+
+        }
+    </script>
+</head>
+
+<body>
+    <form action="display.html" name="form1">
+        Name<input type="text" name="name" id="text" />
+        <br> Email <input type="email" name="mail" id="mail" />
+        <br> Password <input type="text" name="pass" id="password" />
+        <br> Mobile No <input type="number" size="10" id="num" name="number" />
+
+
+        <input type="submit" value="Submit" onclick="passvalue()" />
+
+    </form>
+
+</body>
+
+</html>
