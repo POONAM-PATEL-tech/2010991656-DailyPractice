@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Passing Parameters</h2>
+
+
+    <input id="ip1" type="text" name="ip"><br>
+    <input id="ip2" type="text " name="ip3"><br>
+    <button id="btn">Click</button>
+    <p id="demo"></p>
+
+    <script>
+        var p1 = document.getElementById("ip1").value;
+
+        var p2 = document.getElementById("ip2").value;
+
+
+
+        document.getElementById("btn").addEventListener("click", function() {
+            myfunction(p1, p2);
+        })
+
+        function myfunction(a, b) {
+            document.getElementById("demo").innerHTML = a * b;
+        }
+    </script>
+
+</body>
+
+</html>

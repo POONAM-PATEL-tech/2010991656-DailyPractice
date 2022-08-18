@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--
+        You cannot write it all... this script here
+        <script>
+        document.getElementById("btn").addEventListener("click", myfunction);
+
+        function myfunction() {
+            document.getElementById("demo").innerHTML += "Hi";
+
+        }
+    </script>-->
+</head>
+
+<body>
+    <button id="btn">Buttton</button>
+
+    <p id="demo"></p>
+    <script>
+        document.getElementById("btn").addEventListener("click", myfunction);
+
+        function myfunction() {
+            document.getElementById("demo").innerHTML += "Hi<br>";
+
+        }
+
+        document.getElementById("btn").addEventListener("mouseout", function() {
+            alert("Submit it")
+        })
+
+        document.getElementById("btn").addEventListener("mouseover", function2);
+
+        function function2() {
+            document.getElementById("demo").innerHTML += "KeyDown!<br>";
+        }
+
+
+        window.addEventListener("resize", function() {
+            document.getElementById("demo").innerHTML = Math.random();
+        });
+    </script>
+</body>
+
+</html>

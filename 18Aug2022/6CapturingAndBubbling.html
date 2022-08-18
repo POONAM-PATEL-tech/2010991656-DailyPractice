@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #div1,
+        #div2 {
+            background-color: lightgreen;
+            padding: 50px;
+        }
+        
+        #p1,
+        #p2 {
+            background-color: white;
+            font-size: 20px;
+            border: 1px solid;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <p>In bubbling the innermost element's event is handled first and then the outer:</p>
+    <div id="div1">
+        <h2>Bubbling</h2>
+        <p id="p1">Click me</p>
+    </div><br>
+    <p>I capturing the outermost event is handled first and after this the inner most element </p>
+    <div id="div2">
+        <h2>Capturing:</h2>
+        <p id="p2">Click me</p>
+    </div>
+
+    <script>
+        document.getElementById("p1").addEventListener("click", function() {
+            alert("You clicked the white element");
+        }, false);
+
+        document.getElementById("div1").addEventListener("click", function() {
+            alert("You clicked the green element");
+        }, false);
+
+        document.getElementById("p2").addEventListener("click", function() {
+            alert("You clicked the white element");
+        }, true);
+
+        document.getElementById("div2").addEventListener("click", function() {
+            alert("You clicked the green element");
+        }, true);
+    </script>
+</body>
+
+</html>
