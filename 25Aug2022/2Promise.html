@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Promise is a prototype it is like a class.</p>
+    <p>Yadi koi kam iske andar daal diya then it will resolve or reject</p>
+    <p>Asynchronus always return the object of promise</p>
+    <button onclick="f1()">Click</button> //button will not work because function is coming first //asynchronus function itself call on loading //if you want that it should work at button click then you have to write asyn function at other function then
+    it will work on button click
+    <script>
+        function f1() {
+            async function f() { //if you write it normaol then it will give only 1 but here it also can give alert
+                //Here it is a promise
+
+                //if you do not write Promise then it will okk then will alse.
+                //But it is good if you write it
+                return Promise.resolve(1);
+                // return 1; (You can write it alone also)
+            }
+            f().then(alert);
+        }
+    </script>
+</body>
+
+</html>
