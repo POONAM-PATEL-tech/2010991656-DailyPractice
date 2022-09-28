@@ -1,0 +1,17 @@
+h1 {
+    color: brown;
+}
+
+h2 {
+    color: blue;
+    margin-top: 2%;
+}
+
+body {
+    background-color: azure;
+}
+
+:local(.container) {
+    color: pink;
+    background-color: red;
+}

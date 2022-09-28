@@ -1,0 +1,14 @@
+nav {
+    background-color: antiquewhite;
+    margin: 2%;
+    padding: 5% 2%;
+}
+
+nav a {
+    margin-right: 5%;
+}
+
+nav a.active {
+    text-decoration: none;
+    font-weight: bold;
+}

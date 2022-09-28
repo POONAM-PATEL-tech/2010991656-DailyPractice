@@ -1,0 +1,122 @@
+body {
+    background-image: url("Milky.jpg");
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+#div1 {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 100%;
+}
+
+#div2 {
+    margin-top: 3%;
+    display: inline-flex;
+    margin-bottom: 2%;
+}
+
+img {
+    width: 7rem;
+    cursor: pointer;
+}
+
+#im1 {
+    width: 30px;
+}
+
+#im2 {
+    width: 80px;
+}
+
+#im3 {
+    width: 120px;
+}
+
+#im4 {
+    width: 45px;
+}
+
+#im5 {
+    width: 180px;
+}
+
+#im6 {
+    width: 180px;
+}
+
+#im7 {
+    width: 110px;
+}
+
+#im8 {
+    width: 110px;
+}
+
+figcaption {
+    animation: orbit 3s infinite linear;
+    animation-fill-mode: forwards;
+    position: absolute;
+}
+
+@keyframes orbit {
+    0%,
+    100% {
+        transform: rotate(30deg)
+    }
+    50% {
+        transform: rotate(-30deg);
+    }
+}
+
+input {
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    width: 30%;
+    height: 40px;
+    opacity: 0.25;
+    background-color: ghostwhite;
+    text-align: center;
+}
+
+#d {
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    width: 30%;
+    height: 40px;
+    opacity: 0.25;
+    background-color: ghostwhite;
+    text-align: center;
+    margin-left: 35%;
+}
+
+#p {
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    width: 30%;
+    height: 40px;
+    opacity: 0.25;
+    background-color: ghostwhite;
+    text-align: center;
+    margin-left: 35%;
+    margin-bottom: 1%;
+}
+
+label {
+    font-size: 30px;
+    opacity: 0.5;
+}
+
+figure {
+    display: inline-flexbox;
+}
